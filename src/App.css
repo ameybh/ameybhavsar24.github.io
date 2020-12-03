@@ -1,0 +1,11 @@
+:root {
+    --title-family: 'Aileron', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: var(--title-family);
+}
