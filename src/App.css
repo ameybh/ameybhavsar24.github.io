@@ -1,11 +1,24 @@
 :root {
-    --title-family: 'Aileron', sans-serif;
+    --montserrat:'Montserrat', 'Open Sans', sans-serif;
+    --accent: rgb(255, 94, 0);
+}
+html, body {
+    box-sizing: border-box;
+    background-color: #fafaff;
 }
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Aileron', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: url('./assets/cursor.svg'), auto !important;
 }
-h1 {
-    font-family: var(--title-family);
+.container-fluid {
+    width: 87.5%;
+}
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+    }
 }

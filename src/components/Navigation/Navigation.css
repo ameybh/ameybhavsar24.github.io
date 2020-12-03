@@ -1,0 +1,40 @@
+.navbar {
+    padding: 2.65rem 1rem;   
+}
+.navbar-brand {
+    text-transform:uppercase;
+    color: rgba(0,0,0,.9);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+    -webkit-transform: scaleX(1.15);
+    -moz-transform: scaleX(1.15);
+    transform: scaleX(1.15);
+}
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(0,0,0,0.7) !important;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.nav-link:not(:nth-last-of-type(1)) {
+    margin-right:5rem;
+}
+.nav-link:hover {
+    color: #000;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+    .nav-link {
+        margin-right: 0 !important;
+    }
+}
