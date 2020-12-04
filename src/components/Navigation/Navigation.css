@@ -49,18 +49,19 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.1rem;
-    color: rgba(0,0,0,0.7) !important;
+    color: rgba(0,0,0,0.6) !important;
     letter-spacing: -1px;
     text-align: center;
     -webkit-transform: scaleX(1.2);
     -moz-tranform: scaleX(1.2);
     transform: scaleX(1.2);
+    transition: .1s;
 }
 .nav-link:not(:nth-last-of-type(1)) {
     margin-right:5rem;
 }
 .nav-link:hover {
-    color: #000;
+    color: #000 !important;
 }
 
 .navbar-toggler {
