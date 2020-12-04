@@ -3,7 +3,7 @@ import { Container, Navbar, Nav, Row } from 'react-bootstrap';
 export default function Navigation() {
     return (
         <div>
-            <Navbar expand="sm">
+            <Navbar expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="/">
                         AmeyBhavsar
