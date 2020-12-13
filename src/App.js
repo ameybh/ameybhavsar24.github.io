@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
+import './App.scss'
 import Navigation from './components/Navigation/Navigation'
 import Hero from './components/Hero/Hero'
 

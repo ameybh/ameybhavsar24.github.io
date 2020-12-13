@@ -1,5 +1,5 @@
 import { Jumbotron, Container } from 'react-bootstrap'
-import './Hero.css'
+import './Hero.scss'
 export default function Hero () {
     return (
         <Jumbotron fluid className="hero">

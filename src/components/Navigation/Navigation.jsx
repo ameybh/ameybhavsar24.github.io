@@ -1,4 +1,4 @@
-import './Navigation.css'
+import './Navigation.scss'
 import { useState, useEffect, useRef } from 'react'
 import { Container, Navbar, Nav} from 'react-bootstrap'
 export default function Navigation() {
