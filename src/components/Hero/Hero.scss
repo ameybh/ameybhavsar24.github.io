@@ -1,4 +1,6 @@
 .hero {
     min-height: 150vh;
     background-color: #fafaff;
+    /* remove default jumbotron margin */
+    margin-bottom: 0;
 }

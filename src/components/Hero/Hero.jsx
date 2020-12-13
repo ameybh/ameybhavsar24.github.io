@@ -2,9 +2,11 @@ import { Jumbotron, Container } from 'react-bootstrap'
 import './Hero.css'
 export default function Hero () {
     return (
-        <Jumbotron className="hero">
+        <Jumbotron fluid className="hero">
             <Container fluid>
-                <h1>Hero Section</h1>
+                <h1>Designer</h1>
+                <h1>+Web</h1>
+                <h1>Developer</h1>
             </Container>
         </Jumbotron>
     )
