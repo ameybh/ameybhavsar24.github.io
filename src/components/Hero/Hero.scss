@@ -1,10 +1,26 @@
 .hero {
-    min-height: 150vh;
+    min-height: 100vh;
     background-color: #fafaff;
     /* remove default jumbotron margin */
     margin-bottom: 0;
-    padding-top: 20vh;
+    padding-top: calc(5rem + 10vh);
     padding-bottom: 5vh;
     &__heading {
+        opacity: 1;
+        animation: fadeFromTop 1s ease-out;
+        font-size: calc(1rem + 5vw);
+        text-transform: uppercase;
+        line-height: 0.8;
+        transform-origin: 0;
+        transform: scaleX(1.5);
+        overflow: hidden;
+        font-weight: 600;
+        padding-left: 0;
+        margin-left: 0;
+        letter-spacing: -.5vw;
+        @media (max-width: 600px) {
+            letter-spacing: -1vw;
+        }
     }
 }
+

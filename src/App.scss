@@ -6,6 +6,7 @@
 html, body {
     box-sizing: border-box;
     background-color: #fafaff;
+    overflow-x: hidden;
 }
 * {
     padding: 0;
@@ -22,4 +23,15 @@ html, body {
     .container-fluid {
         width: 100%;
     }
+}
+@keyframes fadeFromTop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animateDelay-1 {
+    animation-delay: 1s;
 }
