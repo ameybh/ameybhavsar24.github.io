@@ -1,5 +1,5 @@
 import './Navigation.css'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react'
 import { Container, Navbar, Nav} from 'react-bootstrap'
 export default function Navigation() {
     const [navBackground, setNavBackground] = useState(false)
@@ -7,7 +7,7 @@ export default function Navigation() {
     navRef.current = navBackground
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 20
+            const show = window.scrollY > 50
             if (navRef.current !== show) {
                 setNavBackground(show)
             }
