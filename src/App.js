@@ -1,10 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Navigation from './components/Navigation/Navigation'
+import Hero from './components/Hero/Hero'
+
 function App() {
   return (
     <div className="App">
       <Navigation />
+      <Hero />
     </div>
   )
 }

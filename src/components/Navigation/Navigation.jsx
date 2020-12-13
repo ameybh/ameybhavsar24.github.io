@@ -1,18 +1,34 @@
 import './Navigation.css'
-import { Container, Navbar, Nav, Row } from 'react-bootstrap';
+import { useState, useEffect, useRef } from 'react';
+import { Container, Navbar, Nav} from 'react-bootstrap'
 export default function Navigation() {
+    const [navBackground, setNavBackground] = useState(false)
+    const navRef = useRef()
+    navRef.current = navBackground
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 20
+            if (navRef.current !== show) {
+                setNavBackground(show)
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
     return (
         <div>
-            <Navbar expand="lg">
+            <Navbar expand="lg" fixed="top" style={{ transition: '.3s ease', borderColor: navBackground ? 'rgba(0,0,0,0.05)' : 'transparent' }}>
                 <Container fluid>
                     <Navbar.Brand href="/">
                         AmeyBhavsar
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
 
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
+                        <div className="bar3"></div>
                     </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">

@@ -1,5 +1,7 @@
 .navbar {
-    padding: 2.65rem 1rem;   
+    padding: 1rem 1rem;
+    background-color: #fafaff;
+    border-bottom: .5px ridge transparent;
 }
 .navbar-brand {
     text-transform:uppercase;
