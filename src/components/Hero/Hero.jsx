@@ -1,13 +1,19 @@
-import { Jumbotron, Container } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 import './Hero.scss'
-export default function Hero () {
+import ArrowDown from '../../assets/arrow.svg';
+export default function Hero() {
     return (
-        <Jumbotron fluid className="hero">
-            <Container fluid>
-                <h1 className="hero__heading">I build</h1>
-                <h1 className="hero__heading">websites.</h1>
-                <h1 className="hero__heading animateDelay-1">For &nbsp;you.</h1>
-            </Container>
-        </Jumbotron>
+        <Container fluid className="hero">
+            <div className="hero__heading">
+                <h1 className="hero__heading__text noselect">I build</h1>
+                <h1 className="hero__heading__text noselect">websites.</h1>
+                <h1 className="hero__heading__text noselect">For &nbsp;you.</h1>
+            </div>
+            <div className="row">
+                <div className="hero__arrow col-12 col-sm-4">
+                    <Image className="hero__arrow__icon" src={ArrowDown} />
+                </div>
+            </div>
+        </Container>
     )
 }

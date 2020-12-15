@@ -5,7 +5,7 @@
 }
 html, body {
     box-sizing: border-box;
-    background-color: #fafaff;
+    background-color: #fcfcff;
     overflow-x: hidden;
 }
 * {
@@ -19,19 +19,25 @@ html, body {
 .container-fluid {
     width: 87.5%;
 }
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
 @media (max-width: 768px) {
     .container-fluid {
         width: 100%;
     }
 }
-@keyframes fadeFromTop {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
-}
-.animateDelay-1 {
-    animation-delay: 1s;
 }
