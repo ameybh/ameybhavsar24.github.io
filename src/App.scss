@@ -2,12 +2,14 @@
 :root {
     --montserrat:'Montserrat', 'Open Sans', sans-serif;
     --aileron: 'Aileron', 'Open Sans', sans-serif;
-    --accent: rgb(255, 94, 0);
+    --accent: rgb(255, 50, 0);
+    --accent-light: rgba(255, 50, 0, 0.85);
 }
 html, body {
     box-sizing: border-box;
     background-color: #fcfcff;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 * {
     padding: 0;

@@ -19,7 +19,7 @@ export default function Navigation() {
     }, [])
     return (
         <Fragment>
-            <Navbar expand="lg" fixed="top" style={{ transition: '.3s ease', backgroundColor: navBackground ? '#fdfdfd' : '#fcfcfc', borderColor: navBackground ? 'rgba(0,0,0,0.05)' : 'transparent' }}>
+            <Navbar expand="lg" fixed="top" style={{ transition: '.3s ease', backgroundColor: navBackground ? '#fdfdfd' : '#fcfcfc', borderColor: navBackground ? 'rgba(0,0,0,.1)' : 'transparent' }}>
                 <Container fluid>
                     <Navbar.Brand href="/" className="noselect">
                         AmeyBhavsar
@@ -32,7 +32,7 @@ export default function Navigation() {
                     </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto noselect">
-                            <Nav.Link>
+                        <Nav.Link href='#about'>
                                 About
                         </Nav.Link>
                             <Nav.Link>

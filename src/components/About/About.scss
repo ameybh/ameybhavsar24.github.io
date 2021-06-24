@@ -1,4 +1,5 @@
 .about {
+    min-height: 80vh;
     padding: 2vh inherit;
     opacity: 0;
     animation: fadeIn 1s ease-in-out 1s forwards;
@@ -21,31 +22,38 @@
         hr {
             margin: .5rem 0;
             transition: .3s;
+            max-width: 20rem;
             @media (max-width: 800px) {
                 margin-left: auto;
                 margin-right: auto;
             }
         }
     }
+    &__text {
+      @media (min-width: 801px) {
+        padding-left: 2vw;
+        transform-origin: bottom;
+        transform: translateY(-10vh);
+      }
+    }
     &__profile {
         position: relative;
+        @media (min-width: 801px) {
+            transform-origin: bottom;
+            transform: translateY(-10vh);
+        }
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 99%);
         &__img {
-            border-radius: .5rem;
-            filter: saturate(0.85);
+            image-rendering: pixelated;
+            filter: saturate(1);
             width: 35vw;
             max-width: 30rem;
             height: auto;
             transition: .3s ease-out;
             &:hover, &:focus {
                 box-shadow: 0 .1rem 1rem #fff;
-                filter: saturate(1);
-            }
-            @media (min-width: 801px) {
-                transform-origin: bottom;
-                transform: translateY(-10vh);
             }
             @media (max-width: 800px) {
-                filter: saturate(1);
                 width: 75vw;
                 margin: 2vh auto;
             }

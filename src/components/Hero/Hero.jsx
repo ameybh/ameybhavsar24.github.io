@@ -10,9 +10,11 @@ export default function Hero() {
                 <h1 className="hero__heading__text noselect">For &nbsp;you.</h1>
             </div>
             <div className="row">
-                <div className="hero__arrow col-12 col-sm-4">
-                    <Image className="hero__arrow__icon" src={ArrowDown} />
-                </div>
+                <a href="#about">
+                    <div className="hero__arrow col-12 col-sm-4">
+                        <Image className="hero__arrow__icon" src={ArrowDown} />
+                    </div>
+                </a>
             </div>
         </Container>
     )
