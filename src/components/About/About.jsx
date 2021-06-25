@@ -20,8 +20,12 @@ export default function About() {
             <Row>
               <Col xs={12} sm={6} className="d-flex align-items-end">
                 <div className="about__text">
-                  Hey! My name is Amey Bhavsar.
-                  <p>I am a Front-end React Developer. </p>
+                  Hey! I'm <b>Amey Bhavsar</b>.<br/>
+                  <p>Web developer — MongoDB, Express, NodeJS, React.<br/>Competitive programmer — <a href="https://www.codechef.com/users/ameybhavsar">Codechef</a>, <a href="https://codeforces.com/profile/bhavsar">Codeforces</a>.</p>
+                  <p>Currently, computer science junior (<i>third year</i>) at <a href="http://slrtce.in">Shree LR Tiwari College of Engineering</a>, University of Mumbai.</p>
+                </div>
+                <div classname="about__">
+
                 </div>
               </Col>
             </Row>
