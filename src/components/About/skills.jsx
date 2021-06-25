@@ -1,4 +1,4 @@
-import { FaBootstrap, FaCss3Alt, FaPhp, FaHtml5,  FaReact, FaNodeJs} from 'react-icons/fa';
+import { FaBootstrap, FaCss3Alt, FaPhp, FaHtml5,  FaReact, FaNode} from 'react-icons/fa';
 import { SiMongodb, SiMaterialUi, SiDjango, SiMysql, SiCplusplus, SiPython, SiJava, SiJavascript, SiNpm} from 'react-icons/si';
 const Skills = [
     {
@@ -31,7 +31,7 @@ const Skills = [
     },
     {
         tooltip: 'NodeJs',
-        icon: <FaNodeJs />
+        icon: <FaNode />
     },
     {
         tooltip: 'Python',
