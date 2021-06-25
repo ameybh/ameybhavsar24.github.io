@@ -1,11 +1,12 @@
 import { Container, Row, Col, Card, Button} from 'react-bootstrap'
+import { FaGithub } from 'react-icons/fa'
 import './Work.scss'
 import { GrPersonalComputer} from 'react-icons/gr';
 import Projects from './projects';
 export default function Work() {
     return (
         <a name="projects">
-        <Container fluid className="about section-content">
+        <Container fluid className="work section-content">
             <Row>
                 <Col xs={12} sm={6} className="d-flex align-items-center justify-content-center">
                   <div className="section-heading">
@@ -46,16 +47,16 @@ export default function Work() {
 const ProjectCard = (props) => {
     const {title, subtitle, text, href } = props;
     return (
-        <Card style={{ width: '100%'}}>
+        <Card style={{ width: '100%'}} className="project-card">
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
                 <Card.Text>
                 {text}
                 </Card.Text>
-                { href.live && <Button tag='a' target='blank' href={href.live }variant="primary">Live</Button>}
+                { href.live && <Button tag='a' target='blank' href={href.live } variant="warning">Live</Button>}
                 {' '}
-                { href.code && <Button tag='a'  target='blank' href={href.code }variant="primary">Code on github</Button> }
+                { href.code && <Button tag='a'  target='blank' href={href.code } variant="warning"><FaGithub /> Source Code</Button> }
             </Card.Body>
         </Card>
     )
