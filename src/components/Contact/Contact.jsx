@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Button} from 'react-bootstrap'
 import './Contact.scss'
 import { MdMessage } from 'react-icons/md';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
 import { SiGmail, SiTwitter} from 'react-icons/si';
 export default function Work() {
     return (
@@ -21,10 +21,12 @@ export default function Work() {
             <Row>
               <Col xs={12} className="d-flex align-items-end">
                 <div className="contact__text">
-                    <a href="https://www.linkedin.com/in/b-amey/"><FaLinkedin /></a>
-                    <a href="https://github.com/ameybhavsar24/"><FaGithub /></a>
-                    <a href="mailto:iamamey24+portfolio@gmail.com"><SiGmail /></a>
-                    <a href="https://twitter.com/ameybhavsar24"><SiTwitter/></a>
+                    
+                    <a href="https://github.com/ameybhavsar24/" target="_blank"><FaGithub /></a>
+                    <a href="mailto:iamamey24+portfolio@gmail.com" target="_blank"><SiGmail /></a>
+                    <a href="https://www.linkedin.com/in/b-amey/" target="_blank"><FaLinkedin /></a>
+                    <a href="https://twitter.com/ameybhavsar24" target="_blank"><SiTwitter/></a>
+                    <a href="https://t.me/heyamey" target="_blank"><FaTelegram/></a>
                 </div>
               </Col>
             </Row>
