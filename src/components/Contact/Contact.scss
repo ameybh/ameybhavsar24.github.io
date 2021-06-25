@@ -1,0 +1,45 @@
+.contact {
+    &__text {
+      width: 100%;
+      font-size: 1.5rem;
+      padding-top: 3vh;
+      padding-bottom: 2vh;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      a {
+        color: #111;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        opacity: .75;
+      }
+      a:hover {
+          opacity: 1;
+        cursor: pointer;
+      }
+      @media (min-width: 801px) {
+        padding-left: 2vw;
+        font-size: 4rem;
+        transform-origin: bottom;
+        transform: translateY(-10vh);
+      }
+    }
+    &__subheading {
+        opacity: .8;
+    }
+    &__icons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        .skill-icon {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        svg {
+            font-size: 5rem;
+            @media (max-width: 800px) {
+                font-size: 3rem;
+            }
+        }
+    }
+}

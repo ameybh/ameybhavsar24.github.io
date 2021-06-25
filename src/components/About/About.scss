@@ -1,8 +1,4 @@
 .about {
-    min-height: 80vh;
-    padding: 2vh inherit;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out 1s forwards;
     &__heading {
         text-transform: uppercase;
         font-family: var(--montserrat);
@@ -14,7 +10,7 @@
         }
         @media (min-width: 801px) {
             transform-origin: bottom;
-            transform: translateY(-5vh);
+            transform: translateY(-10vh);
         }
         @media (max-width: 800px) {
             text-align: center;
@@ -30,7 +26,10 @@
         }
     }
     &__text {
+      width: 100%;
       font-size: 1.25rem;
+      padding-top: 3vh;
+      padding-bottom: 2vh;
       a {
         color: rgb(0,50,100);
       }
@@ -59,6 +58,25 @@
             @media (max-width: 800px) {
                 width: 75vw;
                 margin: 2vh auto;
+            }
+        }
+    }
+    &__subheading {
+        opacity: .8;
+    }
+    &__icons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        .skill-icon {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        svg {
+            font-size: 5rem;
+            @media (max-width: 800px) {
+                font-size: 3rem;
             }
         }
     }

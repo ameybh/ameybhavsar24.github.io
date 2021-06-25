@@ -32,6 +32,57 @@ html, body {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+.section-content  {
+  min-height: 80vh;
+  padding-bottom: 1vh;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+.section-heading {
+    text-transform: uppercase;
+    font-family: var(--montserrat);
+    font-size: calc(1rem + 2vw);
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+    &:hover {
+        hr {
+            border-color: var(--accent);
+        }
+    }
+    @media (min-width: 801px) {
+        transform-origin: bottom;
+        transform: translateY(-10vh);
+    }
+    @media (max-width: 800px) {
+        text-align: center;
+    }
+    hr {
+        margin: .5rem 0;
+        transition: .3s;
+        // max-width: 20rem;
+        @media (max-width: 800px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.section-img {
+    svg  {
+        filter: saturate(1);
+        width: 20vw;
+        max-width: 10rem;
+        height: auto;
+        transition: .3s ease-out;
+        &:hover, &:focus {
+            box-shadow: 0 .1rem 1rem #fff;
+        }
+        @media (max-width: 800px) {
+            width: 50vw;
+            margin: 2vh auto;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .container-fluid {
         width: 100%;
