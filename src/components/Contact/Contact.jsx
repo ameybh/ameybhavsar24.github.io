@@ -6,13 +6,13 @@ import {
   Button,
   Alert,
   Spinner,
-} from 'react-bootstrap';
-import './Contact.scss';
-import { MdMessage } from 'react-icons/md';
-import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
-import { SiGmail, SiTwitter } from 'react-icons/si';
-import { useForm } from '@formspree/react';
-import { useState } from 'react';
+} from "react-bootstrap";
+import "./Contact.scss";
+import { MdMessage } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaTelegram } from "react-icons/fa";
+import { SiGmail, SiTwitter } from "react-icons/si";
+import { useForm } from "@formspree/react";
+import { useState } from "react";
 
 export default function Contact() {
   return (
@@ -75,14 +75,14 @@ export default function Contact() {
             </div>
           </Col>
         </Row>
-        <Row style={{ display: 'flex', justifyContent: 'center' }}>
-          <Col xs={12} sm={6} style={{ padding: '0 5rem' }}>
+        <Row style={{ display: "flex", justifyContent: "center" }}>
+          <Col xs={12} sm={6} style={{ padding: "0 5rem" }}>
             <ContactForm />
           </Col>
         </Row>
         <Row>
           <Col xs={12}>
-            <hr style={{ maxWidth: '10rem', margin: '0 auto' }} />
+            <hr style={{ maxWidth: "10rem", margin: "0 auto" }} />
           </Col>
         </Row>
       </Container>
@@ -91,7 +91,7 @@ export default function Contact() {
 }
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm('mlealdwe');
+  const [state, handleSubmit] = useForm("mlealdwe");
   const onSubmit = (e) => {
     setSubmitted(true);
     handleSubmit(e);
@@ -100,7 +100,7 @@ function ContactForm() {
   const [submitted, setSubmitted] = useState(state.succeeded || false);
   if (submitted) {
     return (
-      <Row style={{ minHeight: '30vh' }}>
+      <Row style={{ minHeight: "30vh" }}>
         <Col xs={12}>
           <Alert variant="dark">
             <p>
@@ -131,7 +131,7 @@ function ContactForm() {
             required
           />
           <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
+            Your email will never be shared with anyone else.
           </Form.Text>
         </Form.Group>
       </Row>
@@ -154,7 +154,7 @@ function ContactForm() {
                 aria-hidden="true"
               />
             ) : (
-              ''
+              ""
             )}
             Submit
           </Button>

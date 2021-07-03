@@ -1,44 +1,43 @@
 .hero {
-    background-color: transparent;
-    padding-top: calc(5rem + 10vh);
-    padding-bottom: 5vh;
-    &__heading__text {
-        opacity: 1;
-        animation: fadeIn ease-out;
-        animation-duration: 1s;
-        font-size: calc(1rem + 5vw);
-        text-transform: uppercase;
-        line-height: 0.8;
-        overflow: hidden;
-        font-weight: 600;
-        padding-left: 0;
-        margin-left: 0;
-        letter-spacing: -.5vw;
-        transform-origin: 0;
-        transform: scaleX(1.5);
-        @media (max-width: 800px) {
-            letter-spacing: -1vw;
-            font-size: calc(1.75rem + 5vw);
-        }
+  background-color: transparent;
+  padding-top: calc(5rem + 10vh);
+  &__heading__text {
+    opacity: 1;
+    animation: fadeIn ease-out;
+    animation-duration: 1s;
+    font-size: calc(1rem + 5vw);
+    text-transform: uppercase;
+    line-height: 0.8;
+    overflow: hidden;
+    font-weight: 600;
+    padding-left: 0;
+    margin-left: 0;
+    letter-spacing: -0.5vw;
+    transform-origin: 0;
+    transform: scaleX(1.5);
+    @media (max-width: 800px) {
+      letter-spacing: -1vw;
+      font-size: calc(1.75rem + 5vw);
     }
-    &__arrow {
-        animation: fadeIn ease-in;
-        animation-duration: .5s;
-        margin: calc(2rem + 5vh) 0vh;
-        position: relative;
-        &__icon {
-            transform-origin: top;
-            opacity: 0.8;
-            width: 5vw;
-            transition: .3s;
+  }
+  &__arrow {
+    animation: fadeIn ease-in;
+    animation-duration: 0.5s;
+    margin: calc(2rem + 5vh) 0vh;
+    position: relative;
+    &__icon {
+      transform-origin: top;
+      opacity: 0.8;
+      width: 5vw;
+      transition: 0.3s;
 
-            &:hover {
-                transform: translateY(.5rem);
-            }
-            @media (max-width: 800px) {
-                width: 10vw;
-                text-align: center;
-            }
-        }
+      &:hover {
+        transform: translateY(0.5rem);
+      }
+      @media (max-width: 800px) {
+        width: 10vw;
+        text-align: center;
+      }
     }
+  }
 }

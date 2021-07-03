@@ -1,8 +1,8 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaGithub } from 'react-icons/fa';
-import './Work.scss';
-import { GrPersonalComputer } from 'react-icons/gr';
-import Projects from './projects';
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
+import "./Work.scss";
+import { GrPersonalComputer } from "react-icons/gr";
+import Projects from "./projects";
 export default function Work() {
   return (
     // eslint-disable-next-line
@@ -32,13 +32,19 @@ export default function Work() {
             <Row>
               {Projects.map((project) => {
                 return (
-                  <Col xs={12} sm={6} spacing={1}>
+                  <Col
+                    xs={12}
+                    sm={6}
+                    spacing={1}
+                    key={project.title}
+                    style={{ margin: "1rem 0rem" }}
+                  >
                     <ProjectCard {...project} />
                   </Col>
                 );
               })}
-              <Col xs={12} sm={6} spacing={1}>
-                <Card style={{ width: '100%' }}>
+              <Col xs={12} sm={6} spacing={1} style={{ margin: "1rem 0rem" }}>
+                <Card style={{ width: "100%" }}>
                   <Card.Body>
                     <Card.Title>
                       <h4>More projects</h4>
@@ -66,7 +72,7 @@ export default function Work() {
 const ProjectCard = (props) => {
   const { title, subtitle, text, href } = props;
   return (
-    <Card style={{ width: '100%' }} className="project-card">
+    <Card style={{ width: "100%" }} className="project-card">
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
@@ -75,7 +81,7 @@ const ProjectCard = (props) => {
           <Button tag="a" target="blank" href={href.live} variant="warning">
             Live
           </Button>
-        )}{' '}
+        )}{" "}
         {href.code && (
           <Button tag="a" target="blank" href={href.code} variant="warning">
             <FaGithub /> Source Code

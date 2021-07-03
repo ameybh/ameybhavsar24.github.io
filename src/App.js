@@ -1,10 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.scss'
-import Navigation from './components/Navigation/Navigation'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Work from './components/Work/Work'
-import Contact from './components/Contact/Contact'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
+import Navigation from "./components/Navigation/Navigation";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Work from "./components/Work/Work";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,7 @@ function App() {
       <Work />
       <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

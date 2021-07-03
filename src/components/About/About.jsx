@@ -1,7 +1,7 @@
-import { Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import './About.scss';
-import ProfileWEBP from '../../assets/profile.webp';
-import Skills from './skills';
+import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
+import "./About.scss";
+import ProfileWEBP from "../../assets/profile.webp";
+import Skills from "./skills";
 export default function About() {
   return (
     // eslint-disable-next-line
@@ -33,8 +33,8 @@ export default function About() {
         <Row>
           <Col xs={12} className="d-flex align-items-end">
             <div className="about__text">
-              Hey! I'm{' '}
-              <strong style={{ fontSize: '1.35rem' }}>Amey Bhavsar</strong>.
+              Hey! I'm{" "}
+              <strong style={{ fontSize: "1.35rem" }}>Amey Bhavsar</strong>.
               <br />
               A computer engineering student at the University of Mumbai and a
               enthusiastic open source contributer.
@@ -43,24 +43,24 @@ export default function About() {
                 Web developer — creating beautiful web experiences using MERN
                 stack.
                 <br />
-                Competitive programmer —{' '}
+                Competitive programmer —{" "}
                 <a href="https://www.codechef.com/users/ameybhavsar">
                   Codechef
                 </a>
-                ,{' '}
+                ,{" "}
                 <a href="https://codeforces.com/profile/bhavsar">Codeforces</a>.
               </p>
             </div>
           </Col>
           <Col xs={12} className="d-flex align-items-end">
             <div className="about__text">
-              <h4 class="about__subheading">
+              <h4 className="about__subheading">
                 <b>Stuff I know</b>
               </h4>
               <div className="about__icons d-flex">
                 {Skills.map((skill) => {
                   return (
-                    <div className="skill-icon">
+                    <div className="skill-icon" key={skill.tooltip}>
                       <OverlayTrigger
                         key={skill.tooltip}
                         placement="bottom"
