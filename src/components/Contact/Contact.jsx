@@ -11,11 +11,12 @@ import './Contact.scss';
 import { MdMessage } from 'react-icons/md';
 import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
 import { SiGmail, SiTwitter } from 'react-icons/si';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import { useState } from 'react';
 
 export default function Contact() {
   return (
+    // eslint-disable-next-line
     <a name="contact">
       <Container fluid className="contact section-content">
         <Row>
@@ -40,19 +41,35 @@ export default function Contact() {
         <Row>
           <Col xs={12} className="d-flex align-items-end">
             <div className="contact__text">
-              <a href="https://github.com/ameybhavsar24/" target="_blank">
+              <a
+                href="https://github.com/ameybhavsar24/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="mailto:iamamey24+portfolio@gmail.com" target="_blank">
+              <a
+                href="mailto:iamamey24+portfolio@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SiGmail />
               </a>
-              <a href="https://www.linkedin.com/in/b-amey/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/b-amey/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/ameybhavsar24" target="_blank">
+              <a
+                href="https://twitter.com/ameybhavsar24"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SiTwitter />
               </a>
-              <a href="https://t.me/heyamey" target="_blank">
+              <a href="https://t.me/heyamey" target="_blank" rel="noreferrer">
                 <FaTelegram />
               </a>
             </div>
