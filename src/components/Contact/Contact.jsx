@@ -6,41 +6,47 @@ import {
   Button,
   Alert,
   Spinner,
-} from "react-bootstrap";
-import "./Contact.scss";
-import { MdMessage } from "react-icons/md";
-import { FaLinkedin, FaGithub, FaTelegram } from "react-icons/fa";
-import { SiGmail, SiTwitter } from "react-icons/si";
-import { useForm } from "@formspree/react";
-import { useState } from "react";
+} from 'react-bootstrap';
+import './Contact.scss';
+import { MdMessage } from 'react-icons/md';
+import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
+import { SiGmail, SiTwitter } from 'react-icons/si';
+import { useForm } from '@formspree/react';
+import { useState } from 'react';
+import FadeInSection from '../../utilities/FadeInSection/FadeInSection';
 
 export default function Contact() {
   return (
-    // eslint-disable-next-line
-    <a name="contact">
-      <Container fluid className="contact section-content">
-        <Row>
-          <Col
-            xs={12}
-            sm={6}
-            className="d-flex align-items-center justify-content-center"
-          >
-            <div className="section-heading">
-              Contact
-              <hr />
-            </div>
-          </Col>
-          <Col
-            xs={12}
-            sm={6}
-            className="d-flex align-items-center justify-content-center section-img"
-          >
-            <MdMessage />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} className="d-flex align-items-end">
-            <div className="contact__text">
+    <FadeInSection>
+      {/* eslint-disable-next-line */}
+      <a name="contact">
+        <Container fluid className="contact section-content">
+          <Row>
+            <Col
+              xs={12}
+              sm={6}
+              className="d-flex align-items-center justify-content-center"
+            >
+              <div className="section-heading">
+                Contact
+                <hr />
+              </div>
+            </Col>
+            <Col
+              xs={12}
+              sm={6}
+              className="d-flex align-items-center justify-content-center section-img"
+            >
+              <MdMessage />
+            </Col>
+          </Row>
+          <Row style={{ display: 'flex', justifyContent: 'center' }}>
+            <Col xs={12} sm={6} style={{ padding: '0 5rem' }}>
+              <ContactForm />
+            </Col>
+          </Row>
+          <Row>
+            <div className="contact__text col col-12 d-alex align-items-end">
               <a
                 href="https://github.com/ameybhavsar24/"
                 target="_blank"
@@ -73,25 +79,21 @@ export default function Contact() {
                 <FaTelegram />
               </a>
             </div>
-          </Col>
-        </Row>
-        <Row style={{ display: "flex", justifyContent: "center" }}>
-          <Col xs={12} sm={6} style={{ padding: "0 5rem" }}>
-            <ContactForm />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12}>
-            <hr style={{ maxWidth: "10rem", margin: "0 auto" }} />
-          </Col>
-        </Row>
-      </Container>
-    </a>
+          </Row>
+
+          <Row>
+            <Col xs={12}>
+              <hr style={{ maxWidth: '10rem', margin: '0 auto' }} />
+            </Col>
+          </Row>
+        </Container>
+      </a>
+    </FadeInSection>
   );
 }
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("mlealdwe");
+  const [state, handleSubmit] = useForm('mlealdwe');
   const onSubmit = (e) => {
     setSubmitted(true);
     handleSubmit(e);
@@ -100,7 +102,7 @@ function ContactForm() {
   const [submitted, setSubmitted] = useState(state.succeeded || false);
   if (submitted) {
     return (
-      <Row style={{ minHeight: "30vh" }}>
+      <Row style={{ minHeight: '30vh' }}>
         <Col xs={12}>
           <Alert variant="dark">
             <p>
@@ -154,7 +156,7 @@ function ContactForm() {
                 aria-hidden="true"
               />
             ) : (
-              ""
+              ''
             )}
             Submit
           </Button>

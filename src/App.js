@@ -1,3 +1,4 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import Navigation from './components/Navigation/Navigation';
@@ -13,7 +14,7 @@ function App() {
       <Particles
         style={{
           position: 'absolute',
-          zIndex: 1,
+          zIndex: 0,
           top: 0,
           height: '100%',
           width: '100vw',

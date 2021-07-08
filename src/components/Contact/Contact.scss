@@ -1,4 +1,5 @@
 .contact {
+  padding-bottom: 2rem;
   &__text {
     width: 100%;
     font-size: 1.5rem;
@@ -21,7 +22,7 @@
       padding-left: 2vw;
       font-size: 4rem;
       transform-origin: bottom;
-      transform: translateY(-10vh);
+      // transform: translateY(-10vh);
     }
   }
   &__subheading {

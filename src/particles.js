@@ -4,11 +4,7 @@ export const particles = {
       value: '#111',
     },
     number: {
-      value: 50,
-      density: {
-        enable: true,
-        value_area: 750,
-      },
+      value: 75,
     },
     opacity: {
       value: 0.5,
