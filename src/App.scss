@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 :root {
-  --montserrat: "Montserrat", "Open Sans", sans-serif;
-  --aileron: "Aileron", "Open Sans", sans-serif;
+  --montserrat: 'Montserrat', 'Open Sans', sans-serif;
+  --aileron: 'Aileron', 'Open Sans', sans-serif;
   --accent: rgb(255, 50, 0);
   --accent-light: rgba(255, 50, 0, 0.85);
 }
 html,
 body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   background-color: #fcfcff;
   overflow-x: hidden;
@@ -16,10 +19,18 @@ body {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // cursor: url("./assets/cursor.svg"), auto !important;
+}
+.wrapper {
+  position: absolute;
+  min-height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .container-fluid {
   width: 87.5%;

@@ -1,6 +1,7 @@
-import { Container, Image } from "react-bootstrap";
-import "./Hero.scss";
-import ArrowDown from "../../assets/arrow.svg";
+import { Container, Image } from 'react-bootstrap';
+import './Hero.scss';
+import ArrowDown from '../../assets/arrow.svg';
+// import Particles from 'react-particles-js';
 export default function Hero() {
   return (
     <Container fluid className="hero">
