@@ -4,25 +4,15 @@ export const particles = {
       value: '#111',
     },
     number: {
-      value: 75,
+      value: 150,
     },
     opacity: {
       value: 0.5,
       random: true,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.25,
-        sync: false,
-      },
     },
     size: {
       value: 2,
       random: true,
-      anim: {
-        speed: 5,
-        size_min: 0.5,
-      },
     },
     line_linked: {
       enable: true,
@@ -30,8 +20,7 @@ export const particles = {
       opacity: 0.01,
     },
     move: {
-      random: true,
-      speed: 5,
+      speed: 4,
       direction: 'top',
       out_mode: 'out',
     },
