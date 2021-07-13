@@ -1,53 +1,130 @@
-export const particles = {
-  particles: {
-    color: {
-      value: '#111',
-    },
-    number: {
-      value: 10,
-    },
-    opacity: {
-      value: 0.5,
-      random: true,
-    },
-    size: {
-      value: 2,
-      random: true,
-    },
-    line_linked: {
-      enable: false,
-      color: '#111',
-      opacity: 0.5,
-    },
-    move: {
-      speed: 4,
-      direction: 'top',
-      out_mode: 'out',
-    },
-  },
-  interactivity: {
-    events: {
-      onhover: {
-        enable: false,
-        mode: 'bubble',
+import Particles from 'react-particles-js'
+
+const ParticleView = () => {
+  const width = document.clientWidth
+  let num_nb
+  if (width > 768) {
+    num_nb = Math.round(Math.sqrt(width * 15))
+  } else {
+    num_nb = Math.round(Math.sqrt(width * 3))
+  }
+  let config = {
+    particles: {
+      number: {
+        nb: num_nb,
+        density: {
+          enable: true,
+          value_area: 800,
+        },
       },
-      onclick: {
+      color: {
+        value: '#111111',
+      },
+      shape: {
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#000000',
+        },
+        polygon: {
+          nb_sides: 3,
+        },
+      },
+      opacity: {
+        value: 0.5,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      size: {
+        value: 2.5,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
         enable: true,
-        mode: 'repulse',
-      },
-    },
-    modes: {
-      bubble: {
         distance: 100,
-        duration: 0.5,
-        size: 0,
-        opacity: 0.1,
+        color: '#000000',
+        opacity: 0.25,
+        width: 0.5,
       },
-      repulse: {
-        distance: 250,
-        duration: 0.5,
+      move: {
+        enable: true,
+        speed: 4,
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
       },
     },
-  },
-  retina_detect: true,
-};
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+        onclick: {
+          enable: true,
+          mode: 'push',
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 1,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3,
+        },
+        repulse: {
+          distance: 100,
+          duration: 0.4,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+  }
+
+  return (
+    <Particles
+      style={{
+        position: 'absolute',
+        zIndex: 0,
+        top: 0,
+        height: '100%',
+        width: '100vw',
+      }}
+      params={config}
+    />
+  )
+}
+export default ParticleView
