@@ -1,17 +1,10 @@
 import Particles from 'react-particles-js'
 
 const ParticleView = () => {
-  const width = document.clientWidth
-  let num_nb
-  if (width > 768) {
-    num_nb = Math.round(Math.sqrt(width * 15))
-  } else {
-    num_nb = Math.round(Math.sqrt(width * 3))
-  }
   let config = {
     particles: {
       number: {
-        nb: num_nb,
+        value: 80,
         density: {
           enable: true,
           value_area: 800,
