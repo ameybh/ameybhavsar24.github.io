@@ -4,7 +4,7 @@ export const particles = {
       value: '#111',
     },
     number: {
-      value: 150,
+      value: 10,
     },
     opacity: {
       value: 0.5,
@@ -15,9 +15,9 @@ export const particles = {
       random: true,
     },
     line_linked: {
-      enable: true,
+      enable: false,
       color: '#111',
-      opacity: 0.01,
+      opacity: 0.5,
     },
     move: {
       speed: 4,
@@ -28,7 +28,7 @@ export const particles = {
   interactivity: {
     events: {
       onhover: {
-        enable: true,
+        enable: false,
         mode: 'bubble',
       },
       onclick: {
