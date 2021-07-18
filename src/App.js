@@ -7,6 +7,12 @@ import About from './components/About/About'
 import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import ParticleView from './particles'
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-202580580-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+
 function App() {
   return (
     <>
