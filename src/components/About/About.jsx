@@ -3,9 +3,17 @@ import './About.scss';
 import ProfileWEBP from '../../assets/profile.webp';
 import Skills from './skills';
 import FadeInSection from '../../utilities/FadeInSection/FadeInSection';
+import AboutBkg from '../../assets/section-bkg/about.jpg'
 export default function About() {
   return (
     <FadeInSection>
+    <div style={{
+      backgroundImage: "linear-gradient(45deg, rgba(255,255,255, 0.6), rgba(255,255,255,0.6)), url('" + AboutBkg +  "')",
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center center'
+    }}>
+    {/*StyleWrapper style={{backgroundImage: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) url(${AboutBkg})`, backgroundSize: 'cover'}}>*/}
       {/* eslint-disable-next-line */}
       <a name="about">
         <Container fluid className="about section-content">
@@ -86,6 +94,7 @@ export default function About() {
           </Row>
         </Container>
       </a>
+    </div>
     </FadeInSection>
   );
 }

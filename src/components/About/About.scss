@@ -1,4 +1,7 @@
 .about {
+  &__wrapper {
+    background: red;
+  }
   &__heading {
     text-transform: uppercase;
     font-family: var(--montserrat);

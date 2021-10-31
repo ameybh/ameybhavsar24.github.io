@@ -14,10 +14,17 @@ import { SiGmail, SiTwitter } from 'react-icons/si';
 import { useForm } from '@formspree/react';
 import { useState } from 'react';
 import FadeInSection from '../../utilities/FadeInSection/FadeInSection';
+import ContactBkg from '../../assets/section-bkg/contact.jpg'
 
 export default function Contact() {
   return (
     <FadeInSection>
+    <div style={{
+      backgroundImage: "linear-gradient(45deg, rgba(255,255,255, 0.6), rgba(255,255,255,0.6)), url('" + ContactBkg +  "')",
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center center'
+    }}>
       {/* eslint-disable-next-line */}
       <a name="contact">
         <Container fluid className="contact section-content">
@@ -88,6 +95,7 @@ export default function Contact() {
           </Row>
         </Container>
       </a>
+      </div>
     </FadeInSection>
   );
 }
